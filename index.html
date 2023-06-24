@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/style/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Contact Book
+            <img src="https://i.ibb.co/x50wtLw/pngwing-com.png" alt="" width="34px" />
+        </h1>
+    </header>
+
+    <main class="container">
+        <div class="add-container">
+            <label for="name">Add New Contact</label>
+            <div class="addInputs ">
+                <div class="box">
+                    <input type="text" id="name" placeholder="Enter Contact Name" required />
+                    <div class="errorReq"><i class="bi bi-asterisk"></i> required field</div>
+                </div>
+
+                <div class="box">
+                    <input type="text" id="number" placeholder="Enter Contact Number" maxlength="10" required />
+                    <div class="errorReq"><i class="bi bi-asterisk"></i> required field</div>
+                </div>
+
+            </div>
+            <button type="submit" id="addContact" onclick="addContact()">
+                Submit
+            </button>
+            <p id="displayNoti"></p>
+        </div>
+
+        <div class="get-container">
+            <label for="getContact">Get Contact Details</label>
+            <div class="getInputs flex-wrap">
+
+                <input type="text" id="getContactName" placeholder="Contact Name" required />
+                <div class="errorReq"><i class="bi bi-asterisk"></i> required field</div>
+
+                <button type="submit" id="getContact" onclick="getContact()">
+                    Get Detail
+                </button>
+            </div>
+            <p id="displayContact"></p>
+            <div class="reset" onclick="reset()">Reset</div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="d1">
+            <div>
+                <span>INSTAGRAM:</span>
+                <a href="https://www.instagram.com/erfan_hesaraki_developer/" target="_blank">ERFAN HESARAKI
+                    DEVELOPER</a>
+            </div>
+            <div>
+                <span>LINKEDIN:</span>
+                <a href="https://www.linkedin.com/in/erfan-hesaraki-3995551a6/" target="_blank">ERFAN HESARAKI</a>
+            </div>
+            <div>
+                <span>GITHUB:</span>
+                <a href="https://github.com/erfanhesaraki" target="_blank">ERFAN HESARAKI</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="asset/js/script.js"></script>
+</body>
+
+</html>
